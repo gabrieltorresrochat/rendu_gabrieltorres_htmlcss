@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS pages/login.css" />
+    <!-- lien icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- lien remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- liens Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Cinzel:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hogwart Exchanges</title>
+  </head>
+  <body>
+    <header>
+      <!-- "navbar" avec seulement le logo sur cette page -->
+      <nav>
+        <a href="/html pages/index.html"><img src="/public/images/harry potter logo.png" class="logo"/></a>
+      </nav>
+    </header>
+    <!-- contenu principal -->
+    <section class="main-page">
+        <!-- création de la box de Login -->
+        <div class="wrapper">
+            <form action="">
+                <h1>Login</h1>
+                <!-- création des box où l'on entre notre Utilisateur et Mot de passe -->
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <!-- créations des petits éléments présents sur une page de Login classique tel que le "se souvenir de moi" et le "mot de passe oublié" -->
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="button">Login</button>
+                <!-- lien qui va amener à la page de création d'un compte -->
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+  </body>
+</html>
